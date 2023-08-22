@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Column(children: [
           //appbar
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 25),
             child: Row(
               children: [
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
           //cards
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
             child: PageView(
                 scrollDirection: Axis.horizontal,
                 controller: _controller,
-                children: [
+                children: const [
                   MyCard(
                     balance: 4550,
                     cardNumber: 8318804975,
@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                   MyCard(
                     balance: 43500,
                     cardNumber: 831883333333,
-                    color: Color.fromARGB(255, 196, 190, 15),
+                    color: Color.fromARGB(255, 198, 197, 170),
                     expiryMonth: 09,
                     expiryYear: 2035,
                   ),
@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ]),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
           SmoothPageIndicator(
@@ -88,11 +88,11 @@ class _HomePageState extends State<HomePage> {
               activeDotColor: Colors.grey.shade800,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -107,8 +107,8 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(15.0),
+          const Padding(
+            padding: EdgeInsets.all(15.0),
             child: Row(
               children: [
                 Column(
@@ -133,9 +133,9 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        backgroundColor: Color.fromARGB(255, 61, 100, 231),
+        backgroundColor: const Color.fromARGB(255, 61, 100, 231),
         child: Container(
-          child: Icon(
+          child: const Icon(
             Icons.monetization_on,
             size: 30,
           ),
@@ -148,18 +148,18 @@ class _HomePageState extends State<HomePage> {
           children: [
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.home),
+              icon: const Icon(Icons.home),
               iconSize: 40,
-              color: Color.fromARGB(255, 80, 169, 241),
+              color: const Color.fromARGB(255, 80, 169, 241),
             ),
             // SizedBox(
             // width: 270,
             //),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.settings),
+              icon: const Icon(Icons.settings),
               iconSize: 40,
-              color: Color.fromARGB(255, 80, 169, 241),
+              color: const Color.fromARGB(255, 80, 169, 241),
             ),
           ],
         ),
